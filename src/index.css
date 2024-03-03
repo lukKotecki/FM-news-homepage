@@ -3,3 +3,17 @@
   padding:0;
   box-sizing: border-box;
 }
+
+
+
+
+.main-wrapper{
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+
+.article-image{
+  max-width: 375px;
+}
