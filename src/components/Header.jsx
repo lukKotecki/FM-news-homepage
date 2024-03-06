@@ -1,16 +1,50 @@
 import React from 'react'
-import Menu from './Menu'
+import { useLocation } from 'react-router-dom';
+import Menu from './Menu/Menu'
+import logo from '../assets/images/logo.svg'
+import menu from '../assets/images/icon-menu.svg'
+import { nanoid } from 'nanoid'
+
+export default function Header({...rest}){
+
+    const [showMenu, setShowMenu] = React.useState(false)
+    const [activePage, setActivePage] = React.useState('home')
+
+    
+    // let location = useLocation()
+    // console.log(location)
 
 
-export default function Header(){
+    React.useEffect(()=>{
+        const closeMenu = function(){
+            window.addEventListener('click', (e)=> {
+            e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
+            setShowMenu(true) : setShowMenu(false) })
+        }
+        return closeMenu
+    },[])
 
+    const menuItems = [
+        {name:'home'},
+        {name:'new'},
+        {name:'popular'},
+        {name:'trending'},
+        {name:'categories'}
+    ]
 
     return (
-        <header>
-            <div className='logo'>
-                W.
+        <header {...rest}>
+            <img className='logo' src={logo} />
+            <div className='menu'>
+                <img id='menu-btn' src={menu} />                
+                <Menu showMenu={showMenu}>
+                    {menuItems.map(li=>
+                        <li key={nanoid()} className={activePage === li.name ? 'active' : ''}>
+                            <a href={li.name}> {li.name}</a>
+                        </li>)
+                    }
+                </Menu>
             </div>
-            <Menu/>
         </header>
     )
 }

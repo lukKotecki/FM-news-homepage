@@ -6,10 +6,11 @@ import Section from './components/Section'
 import Aside from './components/Aside'
 
 function App() {
+
   
   return (
     <div className='main-wrapper'>
-      <Header/>
+      <Header />
       <Main>
         <Arrticle />
         <Aside />

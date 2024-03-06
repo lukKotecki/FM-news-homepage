@@ -3,17 +3,45 @@
   padding:0;
   box-sizing: border-box;
 }
-
-
-
-
+body{
+  font-family: Inter, sans-serif;
+}
+li{
+  list-style-type: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
 .main-wrapper{
   max-width: 375px;
   margin: 0 auto;
   background-color: lightgray;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.logo{
+  max-height: 2rem;
+}
+
+
+
+article{
+  max-width: 375px;
+}
+
+li{
+  background-color: rgb(211, 255, 255);
+}
+
+
 
 .article-image{
+  width: 100%;
   max-width: 375px;
 }

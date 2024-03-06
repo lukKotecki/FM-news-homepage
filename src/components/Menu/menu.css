@@ -1,0 +1,42 @@
+
+#menu-btn{
+    cursor: pointer;
+  }
+  #close{
+    cursor: pointer;
+    margin-left: 80%;
+    padding: 1em;
+  }
+  .menu-container{
+    padding: 1em;
+    position: fixed;
+    right: 0px;
+    top:0;
+    background-color: white;
+    height:100vh;
+    width: 70%;
+    transform: translateX(100%);
+    transition: all .2s ease-out;
+  }
+  .show-menu{
+    transform: translateX(0%);
+  }
+  .navigation{
+    font-size: 1rem;
+    margin-top: 2em;
+  }
+  .navigation li a{
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    margin:.2em;
+    text-transform: capitalize;
+  }
+  .navigation li a:hover{
+    color: orange;
+  }
+  .active{
+    text-decoration: underline;
+    color: #333;
+  }
+  
