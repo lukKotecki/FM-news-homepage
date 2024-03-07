@@ -4,6 +4,7 @@ import Menu from './Menu/Menu'
 import logo from '../assets/images/logo.svg'
 import menu from '../assets/images/icon-menu.svg'
 import { nanoid } from 'nanoid'
+import { Link } from 'react-router-dom'
 
 export default function Header({...rest}){
 
@@ -40,7 +41,7 @@ export default function Header({...rest}){
                 <Menu showMenu={showMenu}>
                     {menuItems.map(li=>
                         <li key={nanoid()} className={activePage === li.name ? 'active' : ''}>
-                            <a href={li.name}> {li.name}</a>
+                            <Link to={'/'+li.name}> {li.name}</Link>
                         </li>)
                     }
                 </Menu>

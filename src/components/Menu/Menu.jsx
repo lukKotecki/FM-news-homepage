@@ -2,6 +2,7 @@ import React from 'react'
 import close from '../../assets/images/icon-menu-close.svg'
 import './menu.css'
 
+
 export default function Menu({showMenu, children}){
 
     return (

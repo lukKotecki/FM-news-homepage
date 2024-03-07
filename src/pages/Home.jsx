@@ -2,7 +2,7 @@ import React from 'react'
 import imageMobile from '../assets/images/image-web-3-mobile.jpg'
 import imageDesktop from '../assets/images/image-web-3-desktop.jpg'
 
-export default function Article(){
+export default function Home(){
 
     const [image, setImage] = React.useState(imageMobile)
 

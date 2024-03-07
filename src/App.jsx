@@ -1,22 +1,25 @@
 import React from 'react'
-import Header from './components/Header'
-import Main from './components/Main'
-import Arrticle from './components/Article'
-import Section from './components/Section'
-import Aside from './components/Aside'
+import Home from './pages/Home'
+import New from './pages/New'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
 
 function App() {
 
   
   return (
-    <div className='main-wrapper'>
-      <Header />
-      <Main>
-        <Arrticle />
-        <Aside />
-        <Section />
-      </Main>
 
+    <div className='main-wrapper'>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path='/' element= {<Home />} />
+            <Route path='/home' element= {<Home />} />
+            <Route path='/new' element= {<New />} />
+
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
