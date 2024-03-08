@@ -6,7 +6,9 @@ export default function New(){
 
     return (
         <article>
-            to jest article
+            <h2>
+               to jest new
+            </h2>
         </article>
     )
 }

@@ -4,7 +4,7 @@ import Menu from './Menu/Menu'
 import logo from '../assets/images/logo.svg'
 import menu from '../assets/images/icon-menu.svg'
 import { nanoid } from 'nanoid'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header({...rest}){
 
@@ -40,8 +40,13 @@ export default function Header({...rest}){
                 <img id='menu-btn' src={menu} />                
                 <Menu showMenu={showMenu}>
                     {menuItems.map(li=>
-                        <li key={nanoid()} className={activePage === li.name ? 'active' : ''}>
-                            <Link to={'/'+li.name}> {li.name}</Link>
+                        <li key={nanoid()} >
+                            <NavLink 
+                                to={li.name}
+                                className={( { isActive } )=> isActive ? 'active' : null }
+                                end>
+                                {li.name}
+                            </NavLink>
                         </li>)
                     }
                 </Menu>
