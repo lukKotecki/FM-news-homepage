@@ -16,7 +16,7 @@
     height:100vh;
     width: 70%;
     transform: translateX(100%);
-    transition: all .2s ease-out;
+    transition: transform .2s ease-out;
   }
   .show-menu{
     transform: translateX(0%);
@@ -40,3 +40,22 @@
     color: #333;
   }
   
+  @media (min-width: 768px){
+    .menu-container{
+      position: initial;
+      transform: translateX(0%);
+      height: fit-content;
+      padding: 0;
+      
+      /* transition: none; */
+    }
+    #menu-btn , #close{
+      display: none;
+    }
+    .navigation{
+      display: flex;
+      margin: 0;
+    }
+    
+
+  }
