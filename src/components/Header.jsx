@@ -9,25 +9,27 @@ import { NavLink } from 'react-router-dom'
 export default function Header({...rest}){
 
     const [showMenu, setShowMenu] = React.useState(false)
-    const [activePage, setActivePage] = React.useState('home')
 
-    
+    // THIS CODE IS FOR LATER USE
+    //const [activePage, setActivePage] = React.useState('home')
     // let location = useLocation()
     // console.log(location)
 
 
+    //THIS CODE WORKS ONLY LOCAL AND DOSENT WORK ON NETLIFY
     // React.useEffect(()=>{
     //     const closeMenu = function(){
     //         window.addEventListener('click', (e)=> {
-    //         console.log('kliknieto')
+    //         console.log('rendering2')
     //         e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
     //         setShowMenu(true) : setShowMenu(false) })
     //     }
     //     return closeMenu
     // },[])
 
+    //THIS CODE WORKS ON NETLIFY BUT RUNS THIS FUNCTION MULTIPLE TIMES
     window.addEventListener('click', (e)=> {
-        console.log('kliknieto')
+        console.log('rendering')
         e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
         setShowMenu(true) : setShowMenu(false) })
 
