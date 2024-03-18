@@ -19,6 +19,7 @@ export default function Header({...rest}){
     React.useEffect(()=>{
         const closeMenu = function(){
             window.addEventListener('click', (e)=> {
+            console.log('kliknieto')
             e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
             setShowMenu(true) : setShowMenu(false) })
         }
