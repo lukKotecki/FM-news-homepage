@@ -7,7 +7,10 @@ export default function Trending(){
     return (
         <article>
             <h1>
-                to jest trending
+                Trending
+            </h1>
+            <h1>
+                Trending site goes here
             </h1>
             
         </article>

@@ -7,7 +7,7 @@ export default function Categories(){
     return (
         <article>
             <h1>
-                to jest categories
+                Categories site goes here
             </h1>
             
         </article>

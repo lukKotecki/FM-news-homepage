@@ -6,9 +6,18 @@ export default function New(){
 
     return (
         <article>
-            <h2>
-               to jest new
-            </h2>
+            <h1>
+                New site goes here
+            </h1>
+            <h1>
+                New site goes here
+            </h1>
+            <h1>
+                New site goes here
+            </h1>
+            <h1>
+                New site goes here
+            </h1>
         </article>
     )
 }

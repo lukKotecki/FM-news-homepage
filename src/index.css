@@ -26,7 +26,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* padding-bottom: 2em; */
 }
 .logo{
   max-height: 2rem;
@@ -58,7 +57,11 @@ article button {
   padding: 1em 2.3em;
   text-transform: uppercase;
 }
-
+article button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 
 aside{
   grid-area: aside;
@@ -118,17 +121,15 @@ section p{
 
 @media (min-width:768px){
   .main-wrapper{
-    max-width: 1440px;
+    max-width: 1024px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     gap: 1em;
     grid-template-areas: "header header header"
                         "article article aside"
                         "article article aside"
                         "section section section";
   }
-  
   .article-image{
     padding: 0;
   }
@@ -139,7 +140,7 @@ section p{
   }
   article{
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
   }
   .article-image{
@@ -151,6 +152,4 @@ section p{
   article button{
     margin-top: 2em;
   }
-
-
 }
