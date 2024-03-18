@@ -16,15 +16,22 @@ export default function Header({...rest}){
     // console.log(location)
 
 
-    React.useEffect(()=>{
-        const closeMenu = function(){
-            window.addEventListener('click', (e)=> {
-            console.log('kliknieto')
-            e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
-            setShowMenu(true) : setShowMenu(false) })
-        }
-        return closeMenu
-    },[])
+    // React.useEffect(()=>{
+    //     const closeMenu = function(){
+    //         window.addEventListener('click', (e)=> {
+    //         console.log('kliknieto')
+    //         e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
+    //         setShowMenu(true) : setShowMenu(false) })
+    //     }
+    //     return closeMenu
+    // },[])
+
+    window.addEventListener('click', (e)=> {
+        console.log('kliknieto')
+        e.target.id==='menu-btn' || e.target.id === 'menu-container' ? 
+        setShowMenu(true) : setShowMenu(false) })
+
+
 
     const menuItems = [
         {name:'home'},
