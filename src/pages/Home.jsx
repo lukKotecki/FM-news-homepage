@@ -17,7 +17,7 @@ export default function Home(){
 
     return (
         <article>
-            <img className='article-image' src={image}/>
+            <img className='article-image' alt='fancy buttons' src={image}/>
             <h1>The Bright Future of Web 3.0?</h1>
             <div>
                 <p>We dive into the next evolution of the web that claims 

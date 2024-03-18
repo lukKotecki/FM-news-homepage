@@ -11,7 +11,7 @@ export default function Section(){
         <section>
             <ul>
                 <li>
-                    <img src={imgOne}></img>
+                    <img src={imgOne} alt='computer'></img>
                     <div>
                         <span>01</span>
                         <h4>Reviving retro PCs</h4>
@@ -19,7 +19,7 @@ export default function Section(){
                     </div>
                 </li>
                 <li>
-                    <img src={imgTwo}></img>
+                    <img src={imgTwo} alt='keyboard'></img>
                     <div>
                         <span>02</span>
                         <h4>Top 10 Laptops of 2022</h4>
@@ -27,7 +27,7 @@ export default function Section(){
                     </div>
                 </li>
                 <li>
-                    <img src={imgThree}></img>
+                    <img src={imgThree} alt='levitating pad'></img>
                     <div>
                         <span>03</span>
                         <h4>THe Growth of Gaming</h4>
