@@ -9,7 +9,19 @@ import Layout from './components/Layout'
 
 function App() {
 
+  // class jakasKlasa {
+  //   pole;
+  //   pole2;
+
+  //   constructor(p, p2){
+  //     this.pole = p2,
+  //     this.pole2 = p
+  //   }
+
+  // }
   
+  // console.log(jakasKlasa.name)
+
   return (
 
     <div className='main-wrapper'>
